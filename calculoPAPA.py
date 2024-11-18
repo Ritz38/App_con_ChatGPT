@@ -105,7 +105,7 @@ st.write("""
     Física,3.8,5,Fundamentación optativa\n
     Base de datos,4.2,3,Disciplinar optativa
 """)
-st.write("El archivo CSV debe estar separado por comas `,`.")
+st.write("\nEl archivo CSV debe estar separado por comas `,`.")
 archivo = st.file_uploader("Sube un archivo CSV con tus asignaturas:", type="csv")
 if archivo:
     try:
