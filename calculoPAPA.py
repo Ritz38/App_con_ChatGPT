@@ -97,8 +97,9 @@ st.subheader("Carga tus datos")
 
 # Ejemplo de formato CSV
 st.subheader("Ejemplo de formato CSV")
+st.write("El formato para cada materia del archivo csv es: Asignatura,Calificación,Créditos,Tipología"
 st.write("""
-    Asignatura,Calificación,Créditos,Tipología
+    Ejemplo:
     Cálculo 1,4.5,5,Fundamentación obligatoria
     Programación,4.7,4,Disciplinar obligatoria
     Física,3.8,5,Fundamentación optativa
