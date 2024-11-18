@@ -1,4 +1,5 @@
 import streamlit as st
+#Utilizamos un archivo de requerimientos para instalar sympy ya que streamlit descarga automaticamente esto
 import sympy as sp
 
 # Configuración inicial
