@@ -1,4 +1,5 @@
 import streamlit as st
+!pip install sympy
 import sympy as sp
 
 # Configuración inicial
