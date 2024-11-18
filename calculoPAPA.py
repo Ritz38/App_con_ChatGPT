@@ -100,9 +100,9 @@ st.subheader("Ejemplo de formato CSV")
 st.write("El formato para cada materia del archivo csv es: Asignatura,Calificación,Créditos,Tipología")
 st.write("""
     Ejemplo:
-    Cálculo 1,4.5,5,Fundamentación obligatoria
-    Programación,4.7,4,Disciplinar obligatoria
-    Física,3.8,5,Fundamentación optativa
+    Cálculo 1,4.5,5,Fundamentación obligatoria\n
+    Programación,4.7,4,Disciplinar obligatoria\n
+    Física,3.8,5,Fundamentación optativa\n
     Base de datos,4.2,3,Disciplinar optativa
 """)
 st.write("El archivo CSV debe estar separado por comas `,`.")
