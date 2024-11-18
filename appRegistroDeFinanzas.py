@@ -20,6 +20,7 @@ tipo_registro = st.selectbox(
 )
 
 categoria = st.text_input("Categoría (ejemplo: Alimentos, Transporte, etc.):")
+categoria = categoria.capitalize()
 monto = st.number_input("Monto:", min_value=0.0, step=0.01)
 nota = st.text_area("Nota adicional:")
 
