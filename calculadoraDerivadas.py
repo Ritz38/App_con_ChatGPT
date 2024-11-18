@@ -23,7 +23,7 @@ if funcion:
         
         # Mostrar resultados
         st.subheader("Resultado")
-        st.latex(f"La \\ derivada \\ de \\ la \\ función \\ {sp.latex(expresion)} \\es: \\ {sp.latex(derivada)}")
+        st.write(f"La derivada de la función {sp.latex(expresion)} es: {sp.latex(derivada)}")
     except (sp.SympifyError, ValueError):
         st.error("Por favor, ingresa una función válida.")
 
