@@ -4,6 +4,7 @@ from datetime import datetime
 
 # Configuración inicial
 st.title("Gestión de Finanzas Personales")
+st.write("Esta app fue elaborada por **Juan Pablo Zuluaga Mesa**")
 st.write("Lleva un registro de tus presupuestos, ingresos, gastos y metas de ahorro.")
 
 # Crear o cargar datos
