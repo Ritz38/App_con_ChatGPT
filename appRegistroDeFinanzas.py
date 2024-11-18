@@ -24,15 +24,17 @@ nota = st.text_area("Nota adicional:")
 
 # Registrar transacción
 if st.button("Registrar"):
-    nueva_fila = {
-        "Fecha": datetime.now().strftime("%Y-%m-%d"),
-        "Tipo": tipo_registro,
-        "Categoría": categoria,
-        "Monto": monto,
-        "Nota": nota,
-    }
-    st.session_state["finanzas"] = st.session_state["finanzas"].append(
-        nueva_fila, ignore_index=True
+    nueva_fila = pd.DataFrame(
+        {
+            "Fecha": [datetime.now().strftime("%Y-%m-%d")],
+            "Tipo": [tipo_registro],
+            "Categoría": [categoria],
+            "Monto": [monto],
+            "Nota": [nota],
+        }
+    )
+    st.session_state["finanzas"] = pd.concat(
+        [st.session_state["finanzas"], nueva_fila], ignore_index=True
     )
     st.success("Registro guardado exitosamente.")
 
