@@ -3,6 +3,7 @@ import pandas as pd
 
 # Configuración inicial
 st.title("Cálculo de PAPA")
+st.write("Esta app fue elaborada por **Juan Pablo Zuluaga Mesa**")
 st.write("Calcula tu Promedio Académico Ponderado Acumulado y porcentaje de avance en la carrera.")
 
 # Crear o cargar datos
