@@ -3,6 +3,7 @@ import sympy as sp
 
 # Configuración inicial
 st.title("Calculadora de Derivadas")
+st.write("Esta app fue elaborada por **Juan Pablo Zuluaga Mesa**")
 st.write("Esta aplicación te permite calcular la derivada de funciones matemáticas.")
 
 # Entrada de la función
