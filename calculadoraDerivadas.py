@@ -29,4 +29,4 @@ if funcion:
 
 # Instrucciones adicionales
 st.write("Ejemplo de entrada válida: `x**2 + 3*x + 5` o `sin(x) + log(x)`.")
-st.write("Soporta funciones como `sin`, `cos`, `tan`, `exp`, `log`, entre otras.")
+st.write("Soporta funciones como `sin()`, `cos()`, `tan()`, `exp()`, `log()`, entre otras.")
