@@ -84,6 +84,17 @@ if not st.session_state["asignaturas"].empty:
     )
     st.write(f"**Porcentaje de avance:** {porcentaje_avance:.2f}%")
 
+# Ejemplo de formato CSV
+st.subheader("Ejemplo de formato CSV")
+st.write("""
+    Asignatura,Calificación,Créditos,Tipología
+    Cálculo 1,4.5,5,Fundamentación obligatoria
+    Programación,4.7,4,Disciplinar obligatoria
+    Física,3.8,5,Fundamentación optativa
+    Base de datos,4.2,3,Disciplinar optativa
+""")
+st.write("El archivo CSV debe estar separado por comas `,`.")
+
 # Descarga de datos
 st.download_button(
     label="Descargar datos",
@@ -96,5 +107,8 @@ st.download_button(
 st.subheader("Carga tus datos")
 archivo = st.file_uploader("Sube un archivo CSV con tus asignaturas:", type="csv")
 if archivo:
-    st.session_state["asignaturas"] = pd.read_csv(archivo)
-    st.success("Datos cargados exitosamente.")
+    try:
+        st.session_state["asignaturas"] = pd.read_csv(archivo)
+        st.success("Datos cargados exitosamente.")
+    except Exception as e:
+        st.error(f"Hubo un error al cargar el archivo: {e}")
