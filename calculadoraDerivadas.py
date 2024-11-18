@@ -1,17 +1,8 @@
 import streamlit as st
-import subprocess
-import sys
+import sympy as sp
 
-# Verificar si SymPy está instalado
-try:
-    import sympy as sp
-except ImportError:
-    # Si no está instalado, instalar SymPy
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "sympy"])
-    import sympy as sp  # Intentar importar de nuevo después de instalar
 # Configuración inicial
 st.title("Calculadora de Derivadas")
-st.write("Esta app fue elaborada por **Juan Pablo Zuluaga Mesa**")
 st.write("Esta aplicación te permite calcular la derivada de funciones matemáticas.")
 
 # Entrada de la función
