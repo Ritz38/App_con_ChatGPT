@@ -87,6 +87,7 @@ def convertir(valor, conversion):
 
 # Configuración de la app
 st.title("App de conversiones")
+st.write("Esta app fue elaborada por **Juan Pablo Zuluaga Mesa**")
 st.write("Selecciona una categoría y el tipo de conversión que deseas realizar.")
 
 # Selección de categoría
