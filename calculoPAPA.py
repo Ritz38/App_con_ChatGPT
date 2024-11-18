@@ -84,17 +84,6 @@ if not st.session_state["asignaturas"].empty:
     )
     st.write(f"**Porcentaje de avance:** {porcentaje_avance:.2f}%")
 
-# Ejemplo de formato CSV
-st.subheader("Ejemplo de formato CSV")
-st.write("""
-    Asignatura,Calificación,Créditos,Tipología
-    Cálculo 1,4.5,5,Fundamentación obligatoria
-    Programación,4.7,4,Disciplinar obligatoria
-    Física,3.8,5,Fundamentación optativa
-    Base de datos,4.2,3,Disciplinar optativa
-""")
-st.write("El archivo CSV debe estar separado por comas `,`.")
-
 # Descarga de datos
 st.download_button(
     label="Descargar datos",
@@ -105,6 +94,17 @@ st.download_button(
 
 # Carga de datos
 st.subheader("Carga tus datos")
+
+# Ejemplo de formato CSV
+st.subheader("Ejemplo de formato CSV")
+st.write("""
+    Asignatura,Calificación,Créditos,Tipología
+    Cálculo 1,4.5,5,Fundamentación obligatoria
+    Programación,4.7,4,Disciplinar obligatoria
+    Física,3.8,5,Fundamentación optativa
+    Base de datos,4.2,3,Disciplinar optativa
+""")
+st.write("El archivo CSV debe estar separado por comas `,`.")
 archivo = st.file_uploader("Sube un archivo CSV con tus asignaturas:", type="csv")
 if archivo:
     try:
